@@ -1,17 +1,13 @@
-## Classroom. 3REE
-
-### A universal JS application written with the 3REE stack, React + Redux + RethinkDB + Express.
-
-
-[![Circle CI](https://circleci.com/gh/GordyD/3ree.svg?style=svg)](https://circleci.com/gh/GordyD/3ree)
+## Classroom
 
 An example universal JS application written with the 3REE stack, *Re*act + *Re*dux + *Re*thinkDB + *E*xpress. A stack for building apps, front and back end, with just Javascript.
 
-This project was initially conceived to experiment with using these technologies in conjunction with one-another. I have written a [blog](http://blog.workshape.io/the-3ree-stack-react-redux-rethinkdb-express-js/) that relates to this codebase.
+This project was initially conceived on this [blog](http://blog.workshape.io/the-3ree-stack-react-redux-rethinkdb-express-js/) that relates to React, Redux, Rethink and Express.
 
 ![Screenshot](http://i.imgur.com/RiFteKV.png)
 
 This project is useful for:
+ - a base single page app
  - seeing how to build a Universal Javascript application
  - understanding how to handle asyncronousity in Redux action creators
  - seeing how you can use Socket.io with Redux
@@ -26,7 +22,7 @@ This project is useful for:
 
 ### Demo
 
-There is a demo app hosted at [3ree-demo.workshape.io](http://3ree-demo.workshape.io). Check it out. If it is down, please email me at gordon@workshape.io
+There is a demo app hosted at [3ree-demo.workshape.io](http://3ree-demo.workshape.io).
 
 ### Setup
 
@@ -38,7 +34,7 @@ You will need to install [RethinkDB](http://www.rethinkdb.com). You can find ins
  - If your local environment is not reflected by `config/default.json`, then add a file at `config/local.json` to provide local customisation.
  - Run `npm run db-setup` to set up DB
 
-### Running Dev Server
+### Starting to Code
 
 On Linux/OSX: `npm start`
 
@@ -46,7 +42,7 @@ On Windows: `npm run start:win`
 
 This will start the Webpack dev server - for serving the client, as well as the server-side API.
 
-Go to http://localhost:3001 in two separate tabs - see changes propagate in real time (Hot Module Replacement works too).
+Go to http://localhost:3001. If you open two separate tabs you can see changes propagate in real time (Hot Module Replacement works too).
 
 ### Running Production Server
 
@@ -54,7 +50,13 @@ You will need to roll out your own deployment script for a server, but before yo
 
  - Build the client with `npm run build:prod`
  - Ensure all production npm modules are installed on the server. e.g. `npm install --prod`
+
+- Docker-compose your app on your server (digital ocean)
+or
  - Rsync your application to your server
+
+
+
  - Set up nginx or your web server of choice to map HTTP requests for your URL to `http://localhost:3000`
  - Run `npm run start:prod` to run on your server
  - Go to your URL
