@@ -1,6 +1,6 @@
 {
   "name": "classroom",
-  "version": "0.0.1.",
+  "version": "0.0.1",
   "description": "A single page classroom.",
   "main": "server.babel.js",
   "scripts": {
@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0",
+    "node": ">=6.9.1",
     "npm": ">=3.8.6"
   },
   "dependencies": {

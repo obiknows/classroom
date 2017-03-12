@@ -14,7 +14,7 @@ export default class Root extends Component {
           <Router history={history}>
             {routing}
           </Router>
-          <DevTools />
+          {/*<DevTools /> turns off dev tools for now*/}
         </div>
       </Provider>
     );

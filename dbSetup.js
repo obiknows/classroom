@@ -2,9 +2,14 @@
 import r from 'rethinkdb';
 import config from 'config';
 
+// configure & name the databases and their tables
 const rethinkdb = config.get('rethinkdb');
-let DATABASE = rethinkdb.db || 'pulse';
-let TABLES = ['pulses']; 
+let DATABASE = rethinkdb.db || 'pulse' || 'classroom';
+let TABLES = [
+	'admin','students',
+	'questions','answers','grades'
+	,'pulses'
+];
 
 r.connect(rethinkdb)
 .then(conn => {
