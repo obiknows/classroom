@@ -1,4 +1,5 @@
-## Classroom
+Classroom
+=========
 
 An example universal JS application written with the 3REE stack, *Re*act + *Re*dux + *Re*thinkDB + *E*xpress. A stack for building apps, front and back end, with just Javascript.
 
