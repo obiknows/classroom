@@ -1,4 +1,8 @@
-## 3REE
+## Classroom. 3REE
+
+### A universal JS application written with the 3REE stack, React + Redux + RethinkDB + Express.
+
+
 [![Circle CI](https://circleci.com/gh/GordyD/3ree.svg?style=svg)](https://circleci.com/gh/GordyD/3ree)
 
 An example universal JS application written with the 3REE stack, *Re*act + *Re*dux + *Re*thinkDB + *E*xpress. A stack for building apps, front and back end, with just Javascript.
