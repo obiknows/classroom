@@ -6,9 +6,9 @@ export default class Header extends Component {
     return (
       <div>
         <header className='Pulse-header'>
-          <h1>Pulse</h1>
+          <h1>Classroom</h1>
           <div className='Pulse-links'>
-            <IndexLink to='/' activeClassName='active'>All Events</IndexLink>  
+            <IndexLink to='/' activeClassName='active'>Home</IndexLink>
             <Link to='/my-events' activeClassName='active'>My Events</Link>
             <Link to='/other-events' activeClassName='active'>Other Events</Link>
           </div>
